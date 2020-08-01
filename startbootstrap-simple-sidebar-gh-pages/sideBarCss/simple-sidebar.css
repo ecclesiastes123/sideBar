@@ -1,0 +1,132 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/templates/simple-sidebar)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+ .toggs{
+     visibility: hidden;
+ }
+
+.container-fluid {
+    position: relative;
+  }
+ #wrapper {
+    overflow-x: hidden;
+ }
+
+
+ .side-link.active {
+    background: rgb(73, 73, 73); /* Or some other color */
+    color:rgb(255, 255, 247);
+ }
+ 
+ .side-link:hover{
+     background-color: rgba(121, 117, 117, 0.473);
+ }
+
+#sidebar-wrapper { 
+    
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+button:focus {
+    outline:0;
+}
+
+a:hover,a:active{
+    text-decoration: none;
+}
+
+#close{
+    border-radius: 100%;
+    margin-left: 5%;
+}
+
+
+#sidebar-wrapper .sidebar-close {
+ 
+  font-size: 1.2rem;
+}
+
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#sidebar-wrapper{
+    margin-top: 80px;
+}
+
+#menu-toggle{
+    margin-left: 70%;
+    }
+
+#navbarSupportedContent{
+    font-size: 15px;
+}   
+
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+ 
+  #menu-toggle{
+    margin-left: 0;
+    }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+    margin-left: 15rem;
+  }
+  #page-content-wrapper.toggled {
+    min-width: 0;
+    width: 100%;
+    margin-left: 0rem;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+  /* #wrapper.toggled #sidebar-wrapper #show-menu{
+      visibility: hidden;
+  } */
+}
+
+.nav-pills{
+    position: fixed;
+}
+
+.img1, .img2{
+    width: 50vw;
+}
+
+#PTW .img2{
+    width: 100vw;
+}
+
+
+@media all and (min-width:800px){
+    .img2{
+        display: none;
+    }
+}
+@media all and (max-width:800px){
+    .img1{
+        display: none;
+    }
+}
